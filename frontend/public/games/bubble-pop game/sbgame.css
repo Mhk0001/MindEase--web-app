@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('Images/gameback.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bubble {
+  position: absolute;
+  top: 100vh;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffb3ec, #5ce1e6);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.bubble-two {
+  background: radial-gradient(circle, #f3ffb3, #ff7b7b);
+}
+
+.bubble-three {
+  background: radial-gradient(circle, #b3ffce, #84b6f4);
+}
+
+.bubble-four {
+  background: radial-gradient(circle, #fff0b3, #ffb3b3);
+}
+
+.bubble-five {
+  background: radial-gradient(circle, #e0b3ff, #b3e0ff);
+}
+
+.score-board {
+  background: white;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 150px);
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+.shadow {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+}
+
+.total-score {
+  background: #fff;
+  padding: 20px 80px 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.main-game {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.start-btn {
+  font-size: 20px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #ff4081;
+  color: white;
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  background: #ff1a75;
+}
